@@ -435,6 +435,9 @@ const ClinicCleaningPage: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             </div>
           </div>
         </section>
+        <footer className="w-full py-12 flex flex-col items-center border-t border-gray-100 mt-20">
+          <p className="text-gray-400 text-[7px] md:text-[9px] tracking-[0.2em] md:tracking-[0.4em] uppercase text-center px-6">Haja Clean Facilities services 2026 © Todos os direitos Reservados</p>
+        </footer>
       </div>
     </motion.div>
   );
@@ -792,6 +795,9 @@ const GymCleaningPage: React.FC<{ onBack: () => void }> = ({ onBack }) => {
             </div>
           </div>
         </section>
+        <footer className="w-full py-12 flex flex-col items-center border-t border-gray-100 mt-20">
+          <p className="text-gray-400 text-[7px] md:text-[9px] tracking-[0.2em] md:tracking-[0.4em] uppercase text-center px-6">Haja Clean Facilities services 2026 © Todos os direitos Reservados</p>
+        </footer>
       </div>
     </motion.div>
   );
@@ -1164,7 +1170,6 @@ const AboutSection = ({ onNext, onPrev }: { onNext: () => void, onPrev: () => vo
               </div>
             </div>
           </div>
-        </motion.div>
       </div>
     </section>
   );
@@ -1308,6 +1313,9 @@ const ServicesSection = ({ onPrev }: { onPrev: () => void }) => {
           Solicitar Orçamento
         </MagneticButton>
       </div>
+      <footer className="w-full py-12 flex flex-col items-center border-t border-gray-100 mt-20">
+        <p className="text-gray-400 text-[7px] md:text-[9px] tracking-[0.2em] md:tracking-[0.4em] uppercase text-center px-6">Haja Clean Facilities services 2026 © Todos os direitos Reservados</p>
+      </footer>
     </section>
   );
 };
@@ -2061,12 +2069,6 @@ export default function App() {
             </AnimatePresence>
           </main>
 
-          {/* Copyright Discreto */}
-          <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[110] w-full max-w-[90vw] flex justify-center">
-            <p className="text-[7px] md:text-[9px] text-gray-400 tracking-[0.2em] md:tracking-[0.4em] uppercase text-center">
-              Haja Clean Facilities services 2026 © Todos os direitos Reservados
-            </p>
-          </div>
         </div>
       ) : currentPage === "gym-cleaning" ? (
         <GymCleaningPage 
