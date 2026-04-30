@@ -1170,6 +1170,7 @@ const AboutSection = ({ onNext, onPrev }: { onNext: () => void, onPrev: () => vo
               </div>
             </div>
           </div>
+        </motion.div>
       </div>
     </section>
   );
